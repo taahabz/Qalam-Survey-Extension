@@ -43,31 +43,57 @@ Type whatever comment you want. Single comment? Cool. Multiple options separated
 
 ## 🎯 How To Use This Thing
 
-### Installation (Super Easy, I Promise)
+### Installation (Literally 3 Steps)
 
-1. **Clone or Download** this repo to your computer
+#### 🚀 Quick Install (Recommended)
+
+1. **Download the Extension**
+   - Click the green "Code" button on GitHub
+   - Select "Download ZIP"
+   - Extract the ZIP file somewhere you can find it
+
+2. **Open Chrome Extensions**
+   - Open Chrome/Edge browser
+   - Go to `chrome://extensions/`
+   - Turn on "Developer mode" (toggle switch in top right)
+
+3. **Load the Extension**
+   - Click "Load unpacked"
+   - Navigate to the extracted folder
+   - **Select the `build` folder** (this is important!)
+   - Click "Select Folder"
+
+That's it! The extension icon should appear in your toolbar. 🎉
+
+---
+
+### 🛠️ For Developers (Want to modify the code?)
+
+If you want to make changes to the extension:
+
+1. **Clone the repo**
    ```bash
    git clone <repo-url>
    cd qalam-surveys
    ```
 
-2. **Install Dependencies** (you need Node.js installed)
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Build It** (this creates the extension files)
+3. **Make your changes** to the source code
+
+4. **Build it**
    ```bash
    npm run build
    ```
 
-4. **Load Into Chrome**
-   - Open Chrome and go to `chrome://extensions/`
-   - Turn on "Developer mode" (top right corner)
-   - Click "Load unpacked"
-   - Select the `build` folder
+5. **Reload the extension** in Chrome
+   - Go to `chrome://extensions/`
+   - Click the refresh icon on the Qalam Surveys extension
 
-That's it! You're locked in. 🔒
+---
 
 ---
 
@@ -156,8 +182,14 @@ This extension is a tool to help with repetitive tasks. Use it responsibly:
 
 ## 🐛 Something's Broken?
 
+**Extension won't load:**
+- Make sure you selected the `build` folder, not the root folder
+- Check that "Developer mode" is enabled in Chrome
+- Try restarting Chrome
+
+**Extension loads but doesn't work:**
 1. Check if the toggle is actually ON (green = yes, gray = no)
-2. Make sure you're on the right Qalam page
+2. Make sure you're on the right Qalam page (`qalam.nust.edu.pk/student/qa/feedback`)
 3. Try reloading the extension in `chrome://extensions/`
 4. Check the browser console (F12) for error messages
 5. Still broken? Open an issue on GitHub
@@ -165,6 +197,12 @@ This extension is a tool to help with repetitive tasks. Use it responsibly:
 ---
 
 ## 💭 FAQ
+
+**Q: Do I need to install Node.js or any technical stuff?**  
+A: Nope! Just download the repo and load the `build` folder into Chrome. That's it. No coding required.
+
+**Q: I don't see the build folder?**  
+A: Make sure you downloaded the whole repo. The build folder should be right there with all the ready-to-use extension files.
 
 **Q: Will I get caught using this?**  
 A: It just fills forms like a human would. It's not hacking anything, just automating clicks.
@@ -180,6 +218,9 @@ A: Then... just fill it manually? This tool isn't forcing you to use it 😅
 
 **Q: Why did you make this?**  
 A: Because we had 15 surveys to fill and honestly? Ain't nobody got time for that.
+
+**Q: The extension isn't showing up after I loaded it?**  
+A: Make sure you selected the `build` folder specifically, not the main project folder. Chrome needs the build folder!
 
 ---
 
