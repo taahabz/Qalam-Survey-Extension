@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Qalam Surveys Auto-Filler",
+    "version": "1.0.0",
+    "description": "Automatically fill and submit NUST Qalam course feedback surveys with toggle control",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+      }
+    },
+    "icons": {
+      "16": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://qalam.nust.edu.pk/*"
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://qalam.nust.edu.pk/student/qa/feedback*"],
+        "js": ["content-script-feedback.js"],
+        "run_at": "document_idle"
+      },
+      {
+        "matches": ["https://qalam.nust.edu.pk/survey/*"],
+        "js": ["content-script-survey.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }

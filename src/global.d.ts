@@ -1,0 +1,4 @@
+/// <reference types="chrome"/>
+
+export {};
+
