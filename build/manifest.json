@@ -17,8 +17,7 @@
       "128": "images/logo.png"
     },
     "permissions": [
-      "storage",
-      "activeTab"
+      "storage"
     ],
     "host_permissions": [
       "https://qalam.nust.edu.pk/*"
