@@ -96,8 +96,8 @@ This Extension complies with:
 
 If you have questions about this privacy policy or the Extension's data practices, please contact:
 
-- **GitHub Issues**: [Your GitHub Repository URL]
-- **Email**: [Your Email Address - Optional]
+- **GitHub Issues**: https://github.com/taahabz/Qalam-Survey-Extension
+- **Email**: taahabz@gmail.com
 
 ## Consent
 
