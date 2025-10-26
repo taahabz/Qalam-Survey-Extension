@@ -198,7 +198,8 @@ function App() {
                   border: 'none',
                   cursor: loading ? 'not-allowed' : 'pointer',
                   opacity: loading ? 0.5 : 1,
-                  transition: 'background-color 0.3s'
+                  transition: 'background-color 0.3s',
+                  padding: '4px'
                 }}
               >
                 <span style={{
@@ -207,8 +208,9 @@ function App() {
                   width: '24px',
                   borderRadius: '9999px',
                   backgroundColor: 'white',
-                  transform: isEnabled ? 'translateX(28px)' : 'translateX(4px)',
-                  transition: 'transform 0.3s'
+                  transform: isEnabled ? 'translateX(24px)' : 'translateX(0)',
+                  transition: 'transform 0.3s',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
                 }} />
               </button>
             </div>
@@ -406,7 +408,8 @@ function App() {
                       backgroundColor: randomizeComment ? '#16a34a' : '#444',
                       border: 'none',
                       cursor: 'pointer',
-                      transition: 'background-color 0.3s'
+                      transition: 'background-color 0.3s',
+                      padding: '3px'
                     }}
                   >
                     <span style={{
@@ -415,8 +418,9 @@ function App() {
                       width: '14px',
                       borderRadius: '9999px',
                       backgroundColor: 'white',
-                      transform: randomizeComment ? 'translateX(19px)' : 'translateX(3px)',
-                      transition: 'transform 0.3s'
+                      transform: randomizeComment ? 'translateX(16px)' : 'translateX(0)',
+                      transition: 'transform 0.3s',
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.2)'
                     }} />
                   </button>
                 </div>

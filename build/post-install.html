@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Qalam Genie</title>
+    <style>
+      :root{--max-width:1200px;--muted:#6b7280}
+      html,body{height:100%}
+      body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#ffffff;color:#111827}
+      .page{min-height:100%;padding:48px}
+      .card{max-width:var(--max-width);width:100%;margin:0 auto;padding:40px}
+      h1{margin:0 0 8px;font-size:28px}
+      p.lead{margin:0 0 20px;color:var(--muted)}
+      .steps{display:flex;gap:18px;flex-wrap:nowrap;margin:20px 0}
+      .step{flex:1 1 0;max-width:none;border-radius:10px;overflow:hidden;border:1px solid #eef2f7;background:#fafafa}
+      .step img{display:block;width:100%;height:auto;object-fit:contain;background:#f3f4f6}
+      .caption{padding:12px 14px;background:#fff;border-top:1px solid #f3f4f6;display:flex;justify-content:space-between;align-items:center}
+      .caption .title{font-weight:600}
+      .caption .step-num{background:#111827;color:#fff;font-size:12px;padding:6px 10px;border-radius:999px}
+      .instructions{margin-top:22px;color:#374151;line-height:1.6}
+      .dev-message{margin-top:20px;padding:14px;border-left:4px solid #e5e7eb;background:#fafafa;color:#374151;border-radius:6px}
+      footer{margin-top:26px;color:var(--muted);font-size:13px}
+      @media (max-width:640px){.page{padding:20px}.card{padding:20px}.step img{height:140px}}
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main class="card" role="main">
+        <h1>All set — Thank you for installing Qalam Genie</h1>
+        <p class="lead">A quick guide to get you started. The content below uses placeholders — replace with your images and copy.</p>
+
+        <section class="steps" aria-label="Quick setup steps">
+          <figure class="step">
+            <img src="./images/Step1.png" alt="Step 1">
+            <figcaption class="caption"><span class="title">Click Puzzle Icon</span><span class="step-num">Step 1</span></figcaption>
+          </figure>
+
+          <figure class="step">
+            <img src="./images/Step2.png" alt="Step 2">
+            <figcaption class="caption"><span class="title">Click Pin Icon</span><span class="step-num">Step 2</span></figcaption>
+          </figure>
+
+          <figure class="step">
+            <img src="./images/Step3.png" alt="Step 3">
+            <figcaption class="caption"><span class="title">Open Qalam Genie</span><span class="step-num">Step 3</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="instructions" aria-labelledby="howto">
+          <h2 id="howto" style="font-size:16px;margin:0 0 8px">How to use</h2>
+          <ol>
+            <li>Navigate to Qalam dashboard where unfilled feedback forms are available.</li>
+            <li>The extension will automatically detect any unfilled feedback forms on the page.</li>
+            <li>Enable the toggle in the extension popup to start automatically filling the forms.</li>
+            <li>Watch as Qalam Genie fills out the feedback forms for you.</li>
+          </ol>
+        </section>
+
+        <aside class="dev-message" aria-label="Message from developer">
+          <strong>Message from the developer</strong>
+          <p style="margin:8px 0 0">This extension is designed for educational purposes only. Please use it responsibly and do not misuse it. Any misuse of this tool is solely the user's responsibility.</p>
+        </aside>
+
+        <footer>
+          <div>Need help? Send an email to <a href="mailto:taahabz@gmail.com" style="color:#111827;text-decoration:underline">taahabz@gmail.com</a></div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
